@@ -3,6 +3,8 @@
 " Version: 1.0
 " Name: Ubuntu
 
+"#363946
+"NOTE: status line color
 hi -a StatusLine									 color: #e0e0e0;background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
 hi -a StatusLine                   font-weight: normal; font-family: Arial,Verdana,Ubuntu,Georgia; text-shadow: none; font-size: 16px; 
 hi -a StatusLine                   padding-top: 2px !important; padding-bottom: 2px !important;
@@ -45,7 +47,14 @@ hi -a CompTitleSep								 height: 0px;
 hi -a CompItem										 color: #d0d0d0;
 hi -a CompItem                     text-shadow: none; font-weight: normal;
 hi -a CompItem:nth-child(2n+1)     background: inherit;
-hi -a CompItem[selected]           color: #e0e0e0; background-color: #4f4f4f;
+
+hi -a CompItem[selected]					 color: #e0e0e0;
+hi -a CompItem[selected]           background: -moz-linear-gradient(bottom, #af4919, #e55e23) repeat scroll 0 0 transparent;
+hi -a CompItem[selected]           box-shadow: 0 1px 1px rgba(205, 98, 16, 0.2);
+hi -a CompItem[selected]           border-width: 1px;
+hi -a CompItem[selected]           border-style: bold;
+hi -a CompItem[selected]           border-color: #f68b64 #e66329 #703f28;
+hi -a CompItem[selected]           -moz-border-radius: 2px;
 
 hi -a CompDesc										 color: #e0e0e0; width: 70%; font-family: Arial,Verdana;
 
@@ -54,7 +63,9 @@ hi -a CompGroup                    border-top:   2px solid #3c3b37;
 hi -a CompGroup                    border-left:  2px solid #3c3b37; -moz-border-radius-topleft:  8px;
 hi -a CompGroup                    border-right: 2px solid #3c3b37; -moz-border-radius-topright: 8px;
 
-hi -a CompIcon										 width: 16px; min-width: 16px; display: inline-block; margin-right: 2ex; margin-left: 2px;
+hi -a CompIcon										 
+hi -a CompIcon                     display: inline-block; width: 26px; min-width: 26px;
+hi -a CompIcon                     margin-right: 2ex; margin-left: 2px;
 hi -a CompLess										 text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
 hi -a CompMore										 text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
 hi -a CompMsg											 font-style: italic; margin-left: 16px;
