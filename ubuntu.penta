@@ -8,7 +8,6 @@
 hi -a StatusLine									 color: #e0e0e0;background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
 hi -a StatusLine                   font-weight: normal; font-family: Arial,Verdana,Ubuntu,Georgia; text-shadow: none; font-size: 16px; 
 hi -a StatusLine                   padding-top: 2px !important; padding-bottom: 2px !important;
-
 hi -a StatusCmdLine								 color: #e0e0e0; 
 "hi -a StatusLine[selected]				 
 "hi -a StatusLineBroken						 
@@ -64,9 +63,11 @@ hi -a WarningMsg									 color: #ff7400; background: #2f2f2f; border: 1px solid
 hi -a Normal											 color: #e0e0e0; background: #343331;
 hi -a Normal                       font-weight: normal; text-shadow: none;
 
-hi -a CompTitle									   color: #e0e0e0;background:transparent;
+
+hi -a CompTitle									   color: #e0e0e0;
+hi -a CompTitle									   background: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgI fAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3 Lmlua3NjYXBlLm9yZ5vuPBoAAAAPdEVYdFRpdGxlAFVzZXIgSW5mb+wx998A AAAXdEVYdEF1dGhvcgBMYXBvIENhbGFtYW5kcmVp35EaKgAAAvhJREFUOI11 kl9oHFUUxr975052NpttmoTSsk1wbSxI2qJowVboEiRQReJr0VK0+FDoUxFi oT6kGptEYiilbwWpQa1YEC0BBV+C0YdipWCjpMQmNt2pu+uEZHfuzNy5mT/H h5qlpPbAB+fh8OP7zjmMiPBwjX/8YX/GtM6BYQ+lRIyzuXWlz5w+/d7P+L8i oqYmz380/tXVK9LzJCVJQkmSkCsb9PmVKXfy/MTww7MbajZjEyP9X3z5mYzj mJIkbgKSJKb1dU2fTn3ijk6MHtwM4BtOMqZ1buClgTbXrUNr/d9ACq01XLeO 0qFS3hLig80JxEYTx8k+wzDgOFW0t3egtTUHAPB9D/X6Gtra8mg05HOPBUhP QqkASgXgnEPrEACgtYbWCoZhwJWNR3bYBKhAzVVrlRcNziClC9M0AQBRFIGI YNtlhCq8uRnANs547Pix/u3btl17+/hbW8JQIY4jAADnAl/PlvHtj3+mKuLE GC8T6HLRD0dnZobjJmBscqzPqdSmoyh68pXDh1mhsANpSjh18Tq4sPDs3l4U Cx346+813Px9SdnV+nzRUy8wIsLI6PtvdO/ceWnw1ddylWoN09PXsLy8jCXZ iTjXi8GB5/HbHQdTZ17G0ZHv8FT3Vvwwe0tVncY4GxoaOtTTU/j+xImTuTRN 4PseAALnBgbfuYpn9vWi7sdYKK81cz+xfQtaBOH6jdt3eRSHZ48ceT1XqdiY n7+FSsWG49SwslJDdcVFV3sOtiMBADcuHQUA1NZ85FstgNJuIX1vv1I+Fhdv QwgTQggYhgBjDF3tFpbur6Izn0UQyqaDtmwL7H8aAOO2kFKy1VUHQeABYDAM Ac45GGM48HQev9yxsaevFzqKAQAdeQu5rImFhfsBgS4bu3YVB7o6O4qFQoFl Mq2wLAuZzAP1Fbfip7kaypVVZCwL38wuIlAK9+7aiRfoP4p++CYrlUq7Wyzz 12w2az7yZg9eBbW0R9Rph4hSwQSLUiK60B3g3ZmZ4fhfayeh2aW3rOsAAAAA SUVORK5CYII= ') no-repeat 8px 4px transparent;
 hi -a CompTitle                    font-weight: bold; font-family: Ubuntu,Verdana; font-size: 14px; text-align: left;
-hi -a CompTitle                    padding-bottom: 5px;
+hi -a CompTitle>*                  padding-left: 40px;
 hi -a CompTitleSep								 height: 0px;
 
 hi -a CompItem										 color: #d0d0d0;
