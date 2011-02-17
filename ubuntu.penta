@@ -1,6 +1,6 @@
 " Pentadactyl color file
 " Maintainer:   Maksim Ryzhikov
-" Version: 1.0
+" Version: 1.1
 " Name: Ubuntu
 
 "#363946
@@ -9,31 +9,56 @@ hi -a StatusLine									 color: #e0e0e0;background: -moz-linear-gradient(bottom
 hi -a StatusLine                   font-weight: normal; font-family: Arial,Verdana,Ubuntu,Georgia; text-shadow: none; font-size: 16px; 
 hi -a StatusLine                   padding-top: 2px !important; padding-bottom: 2px !important;
 
-hi -a StatusCmdLine								 color: #e0e0e0;
-hi -a StatusLine[selected]				 color: #e0e0e0; background: #4f4f4f; font-weight: normal; font-family: Verdana; text-shadow: none; font-size: 18px;
-hi -a StatusLineBroken						 color: #e0e0e0; background: #4f4f4f; font-weight: normal; font-family: Verdana; text-shadow: none; font-size: 18px;
-hi -a StatusLineExtended					 color: #e0e0e0; background: #4f4f4f; font-weight: normal; font-family: Verdana; text-shadow: none; font-size: 18px;
-hi -a StatusLineSecure						 color: #e0e0e0; background: #363946; font-weight: normal; font-family: Verdana; text-shadow: none; font-size: 18px;
-hi -a StatusLineNormal					   color: #e0e0e0; background: #4f4f4f; font-weight: normal; font-family: Verdana; text-shadow: none; font-size: 18px;
-hi -a Preview											 color: gray;
-hi -a Title												 color: #e0e0e0 !important; background-color: #4F4F4F !important; font-weight: normal !important; font-family: Verdana,Ubuntu,Georgia; text-shadow: none; font-size: 16px;
+hi -a StatusCmdLine								 color: #e0e0e0; 
+"hi -a StatusLine[selected]				 
+"hi -a StatusLineBroken						 
+"hi -a StatusLineExtended					 
+"hi -a StatusLineSecure						 
+"hi -a StatusLineNormal					   
 
-hi -a StatusErrorMsg               font-size: 18px !important; color: #e0e0e0 !important;
-hi -a StatusErrorMsg               -l StatusWarningMsg StatusQuestion StatusInfoMsg StatusModeMsg StatusMoreMsg
+
+hi -a Title												 color: #e0e0e0; background-color: transparent; 
+hi -a Title												 padding: 0px 5px;
+hi -a Title												 font-weight: normal; font-family: Ubuntu,Verdana; 
+hi -a Title												 text-shadow: none; font-size: 16px;
+
+hi -a Preview											 color: gray;
+
+"hi -a StatusNormal                 
+hi -a StatusInfoMsg                color: #e0e0e0 !important;
+hi -a StatusErrorMsg               color: #e0e0e0 !important;
+hi -a StatusWarningMsg             color: #e55e23 !important;
+hi -a StatusQuestion               color: #e0e0e0 !important;
+hi -a StatusModeMsg                color: #e0e0e0 !important;
+hi -a StatusMoreMsg                color: #e0e0e0 !important;
 
 "hi -a BufTabSelected							 color: #e0e0e0 !important; background: #0f0f0f !important; font-weight: normal !important;
-hi -a CmdNormal										 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important; font-family: Ubuntu, Georgia !important;font-size: 18px; text-shadow: none !important;
-hi -a CmdCmdLine									 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important; font-family: Ubuntu, Georgia !important;font-size: 18px; text-shadow: none !important;
-hi -a CmdInput										 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important; font-family: Ubuntu, Georgia !important;font-size: 18px; text-shadow: none !important;
-hi -a CmdOutput										 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important; font-family: Ubuntu, Georgia !important;font-size: 18px; text-shadow: none !important;
 
-hi -a CmdModeMsg									 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important;
-hi -a CmdInfoMsg									 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important;
-hi -a CmdMoreMsg									 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important;
-hi -a CmdQuestion									 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important;
-hi -a CmdPrompt										 color: #e0e0e0 !important; background: #2f2f2f !important; font-weight: normal !important;
-hi -a CmdErrorMsg									 color: #ff7400 !important; background: #2f2f2f !important; font-weight: normal !important;
-hi -a CmdWarningMsg								 color: #ff7400 !important; background: #2f2f2f !important; font-weight: normal !important;
+hi -a CmdCmdLine									 background: #2f2f2f; 
+hi -a CmdCmdLine									 border: 1px solid #3c3b37;
+hi -a CmdCmdLine                   font-weight: normal ; font-family: Ubuntu, Verdana;font-size: 18px;
+hi -a CmdCmdLine									 color: #e0e0e0; text-shadow: none ;
+
+"hi -a CmdNormal                   font-weight: normal; font-family: Ubuntu,Verdana; 
+"hi -a CmdInput										 
+"hi -a CmdOutput										 color: #e0e0e0;
+
+hi -a CmdModeMsg									 color: #e0e0e0;
+hi -a CmdInfoMsg									 color: #e0e0e0;
+hi -a CmdMoreMsg									 color: #e0e0e0;
+hi -a CmdQuestion									 color: #e0e0e0;
+hi -a CmdPrompt										 color: #e0e0e0;
+hi -a CmdErrorMsg									 color: #ff7400;
+hi -a CmdWarningMsg								 color: #e55e23;
+
+hi -a ModeMsg											 color: #e0e0e0; background: #2f2f2f; border: 1px solid #3c3b37;
+hi -a MoreMsg											 color: #e0e0e0; background: #2f2f2f; border: 1px solid #3c3b37;
+hi -a InfoMsg											 color: #e0e0e0; background: #2f2f2f; border: 1px solid #3c3b37;
+hi -a Question										 color: #ff7400; background: #2f2f2f; border: 1px solid #3c3b37;
+hi -a ErrorMsg										 color: #ff7400; background: #2f2f2f; border: 1px solid #3c3b37;
+hi -a WarningMsg									 color: #ff7400; background: #2f2f2f; border: 1px solid #3c3b37;
+"hi -a LineNr
+
 "NOTE: buffer colors
 "XXX 
 hi -a Normal											 color: #e0e0e0; background: #343331;
@@ -73,12 +98,13 @@ hi -a CompGroup                    border-right: 2px solid #3c3b37; -moz-border-
 
 hi -a CompLess										 text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
 hi -a CompMore										 text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
-hi -a CompMsg											 font-style: italic; margin-left: 16px;
+hi -a CompMsg											 background: transparent;
+hi -a CompMsg											 font-style: Ubuntu,Verdana;font-size: 18px;
 "hi -a CompMore::after		
+"hi -a CompLess::after                  
 "hi -a CompIcon>img
-"hi -a CompItem>*
+"hi -a CompItem>*                  
 "NOTE: style arrow 
-"hi -a CompLess::after                  color:red !important;		
 "hi -a CompGroup:last-of-type           color: red !important;
 "hi -a CompGroup:not(:first-of-type)
 "NOTE: gradient
@@ -95,7 +121,6 @@ hi -a LinkInfo		              color: #e0e0e0 !important;
 hi -a URL				    text-decoration: none !important; color: #e0e0e0; background: inherit; font-weight:normal !important; font-family: Verdana; text-shadow: none !important;
 hi -a URL:hover			text-decoration: underline; cursor: pointer;
 "NOTE: other
-"hi -a LineNr
 "hi -a Disabled
 "hi -a Enabled
 hi -a Filter color: #e0e0e0;
@@ -133,28 +158,12 @@ hi -a Filter color: #e0e0e0;
 "hi -a HelpHead3
 "hi -a HelpHead4
 "hi -a HelpInfo
-"CompTitle
 "NOTE: strings color
-hi -a Tag             color: #e0e0e0 !important;
-hi -a Keyword         color: #e0e0e0 !important;
-hi -a NonText					color: #2f2f2f !important;
-hi -a Indicator				color: #2bef4s !important;
+hi -a Tag             color: #044C87;
+hi -a Keyword         color: #C51717;
+hi -a NonText					color: #2f2f2f;
+hi -a Indicator				color: #2bef4s;
 hi -a Search          font-size: inherit; padding: 0; color: #ff7400 !important; background-color: transparent !important; padding: 0 !important;
-"NOTE: messages color
-"Normal",
-"ErrorMsg"
-"ModeMsg",
-"MoreMsg",
-"Question"
-"InfoMsg",
-"WarningMsg",
-"LineNr",
-hi -a Question				color: #ff7400 !important; background: #4f4f4f !important; font-weight: normal !important;
-hi -a ErrorMsg				color: #ff7400 !important; background: #4f4f4f !important; font-weight: normal !important;
-hi -a WarningMsg			color: #ff7400 !important; background: #4f4f4f !important; font-weight: normal !important;
-hi -a ModeMsg					color: #e0e0e0 !important; background: #4f4f4f !important; font-weight: normal !important;
-hi -a MoreMsg					color: #e0e0e0 !important; background: #4f4f4f !important; font-weight: normal !important;
-hi -a InfoMsg					color: #e0e0e0 !important; background: #4f4f4f !important; font-weight: normal !important;
 "NOTE: hint color 
 hi -a Hint						font-family: Ubuntu, Comic Sans MS !important; font-size: 15px !important; font-weight: bold !important; color: #fff !important; background-color: #6DA0DD !important; padding: 4px; border: none !important;
 hi -a Hint[active]		background: #73BDBB !important; 
