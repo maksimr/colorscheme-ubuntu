@@ -1,19 +1,18 @@
 " Pentadactyl color file
 " Maintainer:   Maksim Ryzhikov
-" Version: 1.1
+" Version: 1.2b
 " Name: Ubuntu
 
 "#363946
 "NOTE: status line color
-hi -a StatusLine									 color: #e0e0e0;background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
-hi -a StatusLine                   font-weight: normal; font-family: Arial,Verdana,Ubuntu,Georgia; text-shadow: none; font-size: 16px; 
+hi -a StatusLine						       background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
+hi -a StatusLine                   color: #e0e0e0; font-weight: normal; font-family: Arial,Verdana,Ubuntu,Georgia; text-shadow: none; font-size: 16px; 
 hi -a StatusLine                   padding-top: 2px !important; padding-bottom: 2px !important;
-"hi -a StatusLine                   background-image: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABHNCSVQICAgI fAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3 Lmlua3NjYXBlLm9yZ5vuPBoAAATpSURBVDiNjZNZbFRVGMd/596ZTufO1uk6 tNOFFkpLLS0tLYUSKIs28CZBjYJiwKDBhBgfMBh98U1fNEbjFhvfwBglBRKC CgRBaxcqEJYKaAdoy3Rvp+2de2e5xxerLdTln5zky8k5v/zP/zufkFKykKrq VtscDscBr9ezbSoy9Xn7hR8OB+r3NKCoKxWHs8Iy9MtI65dwR0vXQvfFQuDa NY3NWZkZn3q9vgIrmZRDY5OJ2zP5rb6l9qb8+qTflaWq1881xKN3bg3HJ0aO SVN/PdzRMv6P4Kq61SVZGRkfe7zeLSl2u+VdOqn4Sk1aPw/iXZsu3cWlIid/ BGlbQiRSSm7WR/x62hfrPaWflObM9nBHizXLUmaLNRuaXssP5vVkZWdu1rJi 1L2QVHbt38ZUpBj3KpOVW8+KiqIu+sO7mUk8RkFxG4vy22jc8UVKRoVoQlF3 znWs/OlU8af539ScTltu46R4+lAta2s20nntPD8cVSjcconoTDoXul8iGU8Q jSTRtGvc7d1OPO5hyYYbPmlL3f0Q+HJnu6VH9WuK27RKmi2Gxu9z5N1zjJwu xBQxhkIVnP/2AMZ0nGhkGp/zKFnpJygu+YSY4SBhOUDKkkD9HnUWbJstxscn XgbRefxVIYuDCIEPw2YizVT6buSx+JEvMSO1jIw1MBG2GO3Pwen8DbttmF8v PY+UIcRCzRNCKJVV1Z3Z2Zk1KUqUyqrVqHY7J368R6qmUnjwJAFPgt7PHuWm 2YTuK2VTzX70NjffX14DE/2hyeutJVJKa17zgPVpmlWw+4kGPnh7H3mZknu9 PezZmsPHhzYgDq/DbC3nrZ3N7Cu7QyD0NbVjzbzz4iu891wG1dmjmcD6h6IA 9PxgYKJ548pMfayHHVuXU7eyjMKAStwY4629jwPgFIM8s62UxpokhQGFmN7H ts3VfHemIwzoC0WRkpqaeran65uGmeEryp8v+kfF4gm+Ot6B3+/hyaeetcpW bf/ZMIyNUsrYPMdSypgQovt6T2jFonSf29Qn5oEsKbkfHiPUN4yqKKg2lbNt N8kLFrC8slc3DKN7FvpgFAC9obsDZo6/xG1E/3Y8MDhGeGicI8cu/LXXWFdG cX6Ayqrl3O27bwK9c0Fzmwfg83k1ezw2RTKpk0zqtP9ylfdbjhFc5CY3x0ua 1wEkae/uwbLizExH8Hk1O+CbC3rQcbrXnWpLmFNYiSiGGefkmW6SiTidl26y f9d6hIDJSJSLV+9w+scbGAk7VSvKbUD6v4I9Loca18NEIuNcut7P9IxOmtfJ upogMqkjAY8GTfUFDA6P0jc8BYj/BPtdTofacqSNziu/s6FuMXYVSov8pKhx rER83uEtDYWcuziAx5WqAv4FwUIIRVGE3+3W1MGRCQQCM5ZAc6bgcqZgs6k8 KK/HSXHQjT/NoyiK8AshlNnJm+s4UFle4rKriL07GrgVGiEyY9B19T53BqbQ nB6EmA++cLGHU+d7yFsaFpXlJa7L124HgAGY/yuKaqvLXAoWeYtyaFpTQX3V Eux2O/2DU7RfGUDTPH+tobEY57tCqKoNmTCprS5zAUULZVxQWb5U86Tl4knL BSBvGXy4bBOj49MUBTOZ1g2spIVuxPDlJ3jzjbWoimBJUTYjo5MaUAD8BPNH uhp4F9AeCvP/aRo4KKW8CPAH0KUKj+l4pUkAAAAASUVORK5CYII=');
 hi -a StatusCmdLine								 color: #e0e0e0; 
 "hi -a StatusLine[selected]				 
 "hi -a StatusLineBroken						 
 "hi -a StatusLineExtended					 
-"hi -a StatusLineSecure						 
+"hi -a StatusLineSecure			
 "hi -a StatusLineNormal					   
 
 
