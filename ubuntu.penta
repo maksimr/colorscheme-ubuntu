@@ -24,7 +24,8 @@ hi -a StatusErrorMsg               color: #181818; text-shadow: 0 0 1px #666666;
 hi -l StatusErrorMsg   StatusWarningMsg 
 hi -l StatusWarningMsg StatusQuestion 
 hi -l StatusWarningMsg StatusInfoMsg 
-hi -l StatusWarningMsg StatusMoreMsg
+hi -a StatusInfoMsg color: #e0e0e0;
+hi -l StatusInfoMsg StatusMoreMsg
 
 "INFO MESSAGES
 hi -a ModeMsg											 color: #e0e0e0; background: #2f2f2f;
