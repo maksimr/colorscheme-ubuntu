@@ -70,10 +70,21 @@ hi -a CmdErrorMsg									 color: #ff7400;
 hi -a CmdWarningMsg								 color: #e55e23;
 
 
+hi -a CompDesc										 color: inherit; width: 50%;
+hi -a CompDesc										 font-size: 0.9em;
+hi -l CompDesc CompResult
+hi -a CompResult									 width: 50%; overfloaw: hidden;
+hi -a CompResult									 border-right: 5px solid;
+hi -a CompResult									 -moz-border-right-colors: #3c3b37 #3c3b37 #000 #3c3b37;
+
+hi -a CompGroup                    color: inherit;background: transparent;
+hi -a CompGroup                    border-top:   2px solid #3c3b37;
+hi -a CompGroup                    border-left:  2px solid #3c3b37; -moz-border-radius-topleft:  8px;
+hi -a CompGroup                    border-right: 2px solid #3c3b37; -moz-border-radius-topright: 8px;
 
 hi -a CompTitle									   color: inherit;
 hi -a CompTitle									   background: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgI fAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3 Lmlua3NjYXBlLm9yZ5vuPBoAAAAPdEVYdFRpdGxlAFVzZXIgSW5mb+wx998A AAAXdEVYdEF1dGhvcgBMYXBvIENhbGFtYW5kcmVp35EaKgAAAvhJREFUOI11 kl9oHFUUxr975052NpttmoTSsk1wbSxI2qJowVboEiRQReJr0VK0+FDoUxFi oT6kGptEYiilbwWpQa1YEC0BBV+C0YdipWCjpMQmNt2pu+uEZHfuzNy5mT/H h5qlpPbAB+fh8OP7zjmMiPBwjX/8YX/GtM6BYQ+lRIyzuXWlz5w+/d7P+L8i oqYmz380/tXVK9LzJCVJQkmSkCsb9PmVKXfy/MTww7MbajZjEyP9X3z5mYzj mJIkbgKSJKb1dU2fTn3ijk6MHtwM4BtOMqZ1buClgTbXrUNr/d9ACq01XLeO 0qFS3hLig80JxEYTx8k+wzDgOFW0t3egtTUHAPB9D/X6Gtra8mg05HOPBUhP QqkASgXgnEPrEACgtYbWCoZhwJWNR3bYBKhAzVVrlRcNziClC9M0AQBRFIGI YNtlhCq8uRnANs547Pix/u3btl17+/hbW8JQIY4jAADnAl/PlvHtj3+mKuLE GC8T6HLRD0dnZobjJmBscqzPqdSmoyh68pXDh1mhsANpSjh18Tq4sPDs3l4U Cx346+813Px9SdnV+nzRUy8wIsLI6PtvdO/ceWnw1ddylWoN09PXsLy8jCXZ iTjXi8GB5/HbHQdTZ17G0ZHv8FT3Vvwwe0tVncY4GxoaOtTTU/j+xImTuTRN 4PseAALnBgbfuYpn9vWi7sdYKK81cz+xfQtaBOH6jdt3eRSHZ48ceT1XqdiY n7+FSsWG49SwslJDdcVFV3sOtiMBADcuHQUA1NZ85FstgNJuIX1vv1I+Fhdv QwgTQggYhgBjDF3tFpbur6Izn0UQyqaDtmwL7H8aAOO2kFKy1VUHQeABYDAM Ac45GGM48HQev9yxsaevFzqKAQAdeQu5rImFhfsBgS4bu3YVB7o6O4qFQoFl Mq2wLAuZzAP1Fbfip7kaypVVZCwL38wuIlAK9+7aiRfoP4p++CYrlUq7Wyzz 12w2az7yZg9eBbW0R9Rph4hSwQSLUiK60B3g3ZmZ4fhfayeh2aW3rOsAAAAA SUVORK5CYII= ') no-repeat 8px 4px transparent;
-hi -a CompTitle                    font-weight: bold; font-family: Ubuntu, Serif; font-size: 1.2em; text-align: left;
+hi -a CompTitle                    font-size: 1.1em; text-align: left;
 hi -a CompTitle>*                  padding-left: 40px;
 hi -a CompTitleSep								 height: 0px;
 
@@ -92,17 +103,6 @@ hi -a CompItem[selected]           -moz-border-radius: 2px;
 hi -a CompIcon                     display: inline-block; width: 16px; min-width: 16px;
 hi -a CompIcon                     margin-right: 1em; margin-left: 2px;
 
-hi -a CompDesc										 color: inherit; width: 50%;
-hi -a CompDesc										 font-size: 0.8em;
-hi -l CompDesc CompResult
-hi -a CompResult									 width: 50%; overfloaw: hidden;
-hi -a CompResult									 border-right: 5px solid;
-hi -a CompResult									 -moz-border-right-colors: #3c3b37 #3c3b37 #000 #3c3b37;
-
-hi -a CompGroup                    color: inherit;background: transparent;
-hi -a CompGroup                    border-top:   2px solid #3c3b37;
-hi -a CompGroup                    border-left:  2px solid #3c3b37; -moz-border-radius-topleft:  8px;
-hi -a CompGroup                    border-right: 2px solid #3c3b37; -moz-border-radius-topright: 8px;
 
 
 hi -a CompLess										 text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
