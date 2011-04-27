@@ -28,7 +28,7 @@ hi -a StatusInfoMsg                color: #e0e0e0 !important;
 hi -l StatusInfoMsg StatusMoreMsg
 
 "INFO MESSAGES
-hi -a ModeMsg											 color: #e0e0e0; background: #2f2f2f;
+hi -a ModeMsg											 color: #e0e0e0; background: inherit;
 hi -a ModeMsg											 padding: 0.2em;
 hi -a ModeMsg											 border-top: 1px solid #202020;
 hi -a ModeMsg											 border-bottom: 1px solid #3c3b37;
@@ -39,22 +39,83 @@ hi -l ModeMsg Question
 hi -l Question ErrorMsg
 hi -l Question WarningMsg ErrorMsg
 
-"CONTENT
+
+hi -a CmdErrorMsg									 color: #ff7400;
+hi -a CmdWarningMsg								 color: #e55e23;
+
+"IFRAME
+hi -a Events                       border-bottom: 1px solid #000 !important;
+hi -a Events                       background: #2f2f2f;
+"WRAPPERS ITEMS AND TITLE
+hi -a Normal											 color: #e0e0e0; background: inherit;
+
+hi -a CompGroup                    color: inherit; background: transparent;
+hi -a CompGroup                    border-top:   2px solid #3c3b37;
+hi -a CompGroup                    border-left:  2px solid #3c3b37; -moz-border-radius-topleft:  8px;
+hi -a CompGroup                    border-right: 2px solid #3c3b37; -moz-border-radius-topright: 8px;
+
+hi -a Completions                  
+"TITLE
 hi -a Title												 color: #e0e0e0; background-color: transparent; 
 hi -a Title												 padding: 0px 5px;
 hi -a Title												 font-weight: normal; font-family: Ubuntu,Verdana; 
 hi -a Title												 text-shadow: none; font-size: 1em;
 
-hi -a Preview											 color: gray;
-hi -a Events                       border-bottom: 1px solid #000 !important;
+hi -a CompTitle									   background: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgI fAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3 Lmlua3NjYXBlLm9yZ5vuPBoAAAAPdEVYdFRpdGxlAFVzZXIgSW5mb+wx998A AAAXdEVYdEF1dGhvcgBMYXBvIENhbGFtYW5kcmVp35EaKgAAAvhJREFUOI11 kl9oHFUUxr975052NpttmoTSsk1wbSxI2qJowVboEiRQReJr0VK0+FDoUxFi oT6kGptEYiilbwWpQa1YEC0BBV+C0YdipWCjpMQmNt2pu+uEZHfuzNy5mT/H h5qlpPbAB+fh8OP7zjmMiPBwjX/8YX/GtM6BYQ+lRIyzuXWlz5w+/d7P+L8i oqYmz380/tXVK9LzJCVJQkmSkCsb9PmVKXfy/MTww7MbajZjEyP9X3z5mYzj mJIkbgKSJKb1dU2fTn3ijk6MHtwM4BtOMqZ1buClgTbXrUNr/d9ACq01XLeO 0qFS3hLig80JxEYTx8k+wzDgOFW0t3egtTUHAPB9D/X6Gtra8mg05HOPBUhP QqkASgXgnEPrEACgtYbWCoZhwJWNR3bYBKhAzVVrlRcNziClC9M0AQBRFIGI YNtlhCq8uRnANs547Pix/u3btl17+/hbW8JQIY4jAADnAl/PlvHtj3+mKuLE GC8T6HLRD0dnZobjJmBscqzPqdSmoyh68pXDh1mhsANpSjh18Tq4sPDs3l4U Cx346+813Px9SdnV+nzRUy8wIsLI6PtvdO/ceWnw1ddylWoN09PXsLy8jCXZ iTjXi8GB5/HbHQdTZ17G0ZHv8FT3Vvwwe0tVncY4GxoaOtTTU/j+xImTuTRN 4PseAALnBgbfuYpn9vWi7sdYKK81cz+xfQtaBOH6jdt3eRSHZ48ceT1XqdiY n7+FSsWG49SwslJDdcVFV3sOtiMBADcuHQUA1NZ85FstgNJuIX1vv1I+Fhdv QwgTQggYhgBjDF3tFpbur6Izn0UQyqaDtmwL7H8aAOO2kFKy1VUHQeABYDAM Ac45GGM48HQev9yxsaevFzqKAQAdeQu5rImFhfsBgS4bu3YVB7o6O4qFQoFl Mq2wLAuZzAP1Fbfip7kaypVVZCwL38wuIlAK9+7aiRfoP4p++CYrlUq7Wyzz 12w2az7yZg9eBbW0R9Rph4hSwQSLUiK60B3g3ZmZ4fhfayeh2aW3rOsAAAAA SUVORK5CYII= ') no-repeat 8px 4px transparent;
+hi -a CompTitle                    font-size: 1.1em; text-align: left;
+hi -a CompTitle>*                  padding-left: 40px;
+hi -a CompTitleSep								 height: 0px;
+"ITEM
+hi -a CompItem                     font-family: monospace;
+hi -a CompItem:nth-child(2n+1)     background: inherit;
+hi -a CompItem[selected]           background: -moz-linear-gradient(bottom, #af4919, #e55e23) repeat scroll 0 0 transparent;
+hi -a CompItem[selected]           box-shadow: 0 1px 1px rgba(205, 98, 16, 0.2);
+hi -a CompItem[selected]           border-width: 1px;
+hi -a CompItem[selected]           border-style: bold;
+hi -a CompItem[selected]           border-color: #f68b64 #e66329 #703f28;
+hi -a CompItem[selected]           -moz-border-radius: 2px;
+hi -a CompIcon                     display: inline-block; width: 16px; min-width: 16px;
+hi -a CompIcon                     margin-right: 1em; margin-left: 2px;
+hi -a Filter                       color: #e0e0e0; text-decoration: underline;
+"ITEM WITHOUT TEXT
+hi -a NonText					color: #2f2f2f;
+"TITLE > and ITEM >
+hi -a CompDesc										 width: 50%;
+hi -a CompDesc										 color: #d0d0d0; overflow: hidden;
+hi -l CompDesc CompResult
+hi -a CompResult									 width: 50%;
+hi -a CompResult									 border-right: 5px solid;
+hi -a CompResult									 -moz-border-right-colors: #3c3b37 #3c3b37 #000 #3c3b37;
+"MESSAGES IN IFRAME
+hi -a CompMsg											 background: transparent;
+hi -a CompMsg											 font-style: Ubuntu,Serif;font-size: 1.2em;
+"ARROW NAVIGATION
+hi -a CompLess										 text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
+hi -a CompMore										 text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
+"IN ITEM RESULT
+hi -a Indicator				color: #2bef4s;
+hi -a Preview					color: gray;
+"IN DESCRIPTION ITEM
+hi -a Tag             color: #044C87;
+hi -a Keyword         color: #C51717;
 
-hi -a Normal											 color: #e0e0e0; background: #343331;
-hi -a Normal                       font-weight: normal; text-shadow: none;
+hi -a Gradient				          height: 1px; margin-bottom: -1px; margin-top: -1px;
+hi -a GradientLeft							background-color: #2f2f2f;
+hi -a GradientRight							background-color: #2f2f2f;
+
+hi -a Link                      color: #e0e0e0;
+hi -l Link Link:not(:hover)>LinkInfo
+hi -l Link Message               
+hi -l Link Message\ String      
+hi -l Link LinkInfo		         
+
+hi -a URL				    text-decoration: none; color: #e0e0e0; background: inherit;
+hi -a URL:hover			text-decoration: underline; cursor: pointer;
 
 hi -a CmdCmdLine									 border: 1px solid #3c3b37;
 
 hi -a CmdNormal									   font-size: 1.1em;
-hi -a CmdNormal									   background: #222; 
+hi -a CmdNormal									   background-color: #222222; 
 hi -a CmdNormal									   padding-top: 2px;
 
 "hi -a CmdInput										 
@@ -66,72 +127,10 @@ hi -l CmdModeMsg CmdModeMsg
 hi -l CmdModeMsg CmdQuestion				
 hi -l CmdModeMsg CmdPrompt				
 
-hi -a CmdErrorMsg									 color: #ff7400;
-hi -a CmdWarningMsg								 color: #e55e23;
-
-
-hi -a CompDesc										 color: inherit; width: 50%;
-hi -a CompDesc										 font-size: 0.9em;
-hi -l CompDesc CompResult
-hi -a CompResult									 width: 50%; overfloaw: hidden;
-hi -a CompResult									 border-right: 5px solid;
-hi -a CompResult									 -moz-border-right-colors: #3c3b37 #3c3b37 #000 #3c3b37;
-
-hi -a CompGroup                    color: inherit;background: transparent;
-hi -a CompGroup                    border-top:   2px solid #3c3b37;
-hi -a CompGroup                    border-left:  2px solid #3c3b37; -moz-border-radius-topleft:  8px;
-hi -a CompGroup                    border-right: 2px solid #3c3b37; -moz-border-radius-topright: 8px;
-
-hi -a CompTitle									   color: inherit;
-hi -a CompTitle									   background: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgI fAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3 Lmlua3NjYXBlLm9yZ5vuPBoAAAAPdEVYdFRpdGxlAFVzZXIgSW5mb+wx998A AAAXdEVYdEF1dGhvcgBMYXBvIENhbGFtYW5kcmVp35EaKgAAAvhJREFUOI11 kl9oHFUUxr975052NpttmoTSsk1wbSxI2qJowVboEiRQReJr0VK0+FDoUxFi oT6kGptEYiilbwWpQa1YEC0BBV+C0YdipWCjpMQmNt2pu+uEZHfuzNy5mT/H h5qlpPbAB+fh8OP7zjmMiPBwjX/8YX/GtM6BYQ+lRIyzuXWlz5w+/d7P+L8i oqYmz380/tXVK9LzJCVJQkmSkCsb9PmVKXfy/MTww7MbajZjEyP9X3z5mYzj mJIkbgKSJKb1dU2fTn3ijk6MHtwM4BtOMqZ1buClgTbXrUNr/d9ACq01XLeO 0qFS3hLig80JxEYTx8k+wzDgOFW0t3egtTUHAPB9D/X6Gtra8mg05HOPBUhP QqkASgXgnEPrEACgtYbWCoZhwJWNR3bYBKhAzVVrlRcNziClC9M0AQBRFIGI YNtlhCq8uRnANs547Pix/u3btl17+/hbW8JQIY4jAADnAl/PlvHtj3+mKuLE GC8T6HLRD0dnZobjJmBscqzPqdSmoyh68pXDh1mhsANpSjh18Tq4sPDs3l4U Cx346+813Px9SdnV+nzRUy8wIsLI6PtvdO/ceWnw1ddylWoN09PXsLy8jCXZ iTjXi8GB5/HbHQdTZ17G0ZHv8FT3Vvwwe0tVncY4GxoaOtTTU/j+xImTuTRN 4PseAALnBgbfuYpn9vWi7sdYKK81cz+xfQtaBOH6jdt3eRSHZ48ceT1XqdiY n7+FSsWG49SwslJDdcVFV3sOtiMBADcuHQUA1NZ85FstgNJuIX1vv1I+Fhdv QwgTQggYhgBjDF3tFpbur6Izn0UQyqaDtmwL7H8aAOO2kFKy1VUHQeABYDAM Ac45GGM48HQev9yxsaevFzqKAQAdeQu5rImFhfsBgS4bu3YVB7o6O4qFQoFl Mq2wLAuZzAP1Fbfip7kaypVVZCwL38wuIlAK9+7aiRfoP4p++CYrlUq7Wyzz 12w2az7yZg9eBbW0R9Rph4hSwQSLUiK60B3g3ZmZ4fhfayeh2aW3rOsAAAAA SUVORK5CYII= ') no-repeat 8px 4px transparent;
-hi -a CompTitle                    font-size: 1.1em; text-align: left;
-hi -a CompTitle>*                  padding-left: 40px;
-hi -a CompTitleSep								 height: 0px;
-
-hi -a CompItem										 color: #d0d0d0;
-hi -a CompItem                     text-shadow: none; font-weight: normal; font-size: 18px; font-family: Ubuntu,Verdana,Arial;
-hi -a CompItem:nth-child(2n+1)     background: inherit;
-
-hi -a CompItem[selected]					 color: inherit;
-hi -a CompItem[selected]           background: -moz-linear-gradient(bottom, #af4919, #e55e23) repeat scroll 0 0 transparent;
-hi -a CompItem[selected]           box-shadow: 0 1px 1px rgba(205, 98, 16, 0.2);
-hi -a CompItem[selected]           border-width: 1px;
-hi -a CompItem[selected]           border-style: bold;
-hi -a CompItem[selected]           border-color: #f68b64 #e66329 #703f28;
-hi -a CompItem[selected]           -moz-border-radius: 2px;
-
-hi -a CompIcon                     display: inline-block; width: 16px; min-width: 16px;
-hi -a CompIcon                     margin-right: 1em; margin-left: 2px;
-
-
-
-hi -a CompLess										 text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
-hi -a CompMore										 text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
-hi -a CompMsg											 background: transparent;
-hi -a CompMsg											 font-style: Ubuntu,Serif;font-size: 1.2em;
-
-hi -a Gradient				          height: 1px; margin-bottom: -1px; margin-top: -1px;
-hi -a GradientLeft							background-color: #2f2f2f;
-hi -a GradientRight							background-color: #2f2f2f;
-
-hi -a Link                      color: #e0e0e0 !important;
-hi -l Link Link:not(:hover)>LinkInfo
-hi -l Link Message               
-hi -l Link Message\ String      
-hi -l Link LinkInfo		         
-
-hi -a URL				    text-decoration: none; color: #e0e0e0; background: inherit;
-hi -a URL:hover			text-decoration: underline; cursor: pointer;
-hi -a Filter color: #e0e0e0;
-
-hi -a Tag             color: #044C87;
-hi -a Keyword         color: #C51717;
-hi -a NonText					color: #2f2f2f;
-hi -a Indicator				color: #2bef4s;
 hi -a Search          font-size: inherit; padding: 0; color: #ff7400 !important; background-color: transparent !important; padding: 0 !important;
-
 "NOTE: hint color 
-hi -a Hint						font-family: Ubuntu, Comic Sans MS !important; font-size: 15px !important; font-weight: bold !important; color: #fff !important; background-color: #6DA0DD !important; padding: 4px; border: none !important;
+hi -a Hint						font-family: Ubuntu, Comic Sans MS !important; font-size: 15px !important; font-weight: bold !important;
+hi -a Hint						color: #fff !important; background-color: #6DA0DD !important; padding: 4px; border: none !important;
 hi -a Hint[active]		background: #73BDBB !important; 
 hi -a HintActive			background: #D7D8DB !important; 
 hi -a Hint::after			content: attr(text) !important;
