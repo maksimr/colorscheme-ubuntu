@@ -3,28 +3,28 @@
 " Version: 2.0
 " Name: Ubuntu
 
-hi -a StatusLineNormal
+hi -a StatusLineNormal						       border-top: 1px normal #343434;
+hi -a StatusLineNormal									 background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
 
-hi -a StatusLine									 background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
+hi -l StatusLineNormal StatusLineSecure
+hi -l StatusLineNormal StatusLineExtended
+hi -l StatusLineNormal StatusLine[selected]
+hi -l StatusLineNormal StatusLineBroken
+
 hi -a StatusLine									 font-weight: normal; font-family: Ubuntu,Arial,Georgia;
 hi -a StatusLine									 color: #e0e0e0; font-size: 1em;
-
-hi -l StatusLine StatusLineSecure
-hi -l StatusLine StatusLineExtended
 hi -l StatusLine StatusCmdLine
-hi -l StatusLine StatusLine[selected]
-hi -l StatusLine StatusLineBroken
 
 "TEXT IN TULBAR 
 hi -a StatusModeMsg								 background: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgI fAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3 Lmlua3NjYXBlLm9yZ5vuPBoAAAAOdEVYdFRpdGxlAFRlcm1pbmFs1fugkQAA ABd0RVh0QXV0aG9yAExhcG8gQ2FsYW1hbmRyZWnfkRoqAAAAKXRFWHREZXNj cmlwdGlvbgBCYXNlZCBvZiBKYWt1YiBTdGVpbmVyJ3Mgd29yayfTJ5kAAAG8 SURBVDiNpZM9axRRFIafmb3z5WbGhcUER5JVg3/BlAEhpYKlIGELQVgSLKxF sLQwQcEmXSAIamUjJj9DKz8C1uKKrLsz9849cy10k11UiMmBU57nvLznPZ5z jpOUd+t2d1esrBxnuKEae8pWduXO+l2iKCKOY8IwJIqig1ZKobX+o8uy5NHm wxUlIgDc6Hb/a/v21hYigi8ijH14/+4tl8536OQ5qq75/Okj5Y8BF87ltLMM 5WqG3/oAiMgYUB8ALi4u0uv1SLOUqrbkec7S0mWS5ima6QwzaUbWagHgnEOk nlYQxjHPX75gfW2NUhvmFzpoUzEcFYxGQ0pdUBTFBEBQk4Azs7Os3lxl88lj 5jsLzJ2do6osKggI4pjIWhIriPsHQFeGew/uU5SadrvN98EAaytKbSiLAmM0 NQ7w/g4IwhAVKJppyvWr1zidZThg+9kOSZJgbYUxhq9f+pOAQxPF1SjPw/ke r968xvd9AHylqLEgHuPcjk2cUtBqtYiSmDCMCEJFo6F+n8xSGYsxGl2U9KcV HAL2P+wfOUhTAKmFpxsbR48hIPWvIHnLV5Z3xdpjPpPa8076zj8B3TMktfGl GlgAAAAASUVORK5CYII=') no-repeat scroll 8px center transparent !important;
 hi -a StatusModeMsg                padding-left: 28px !important;
 hi -a StatusModeMsg                color: #e0e0e0;
 
-hi -a StatusErrorMsg               color: #181818; text-shadow: 0 0 1px #666666;
+hi -a StatusErrorMsg               color: #181818 !important; text-shadow: 0 0 1px #666666;
 hi -l StatusErrorMsg   StatusWarningMsg 
-hi -l StatusWarningMsg StatusQuestion 
-hi -l StatusWarningMsg StatusInfoMsg 
-hi -a StatusInfoMsg color: #e0e0e0;
+hi -l StatusErrorMsg   StatusQuestion 
+hi -l StatusErrorMsg   StatusInfoMsg 
+hi -a StatusInfoMsg                color: #e0e0e0 !important;
 hi -l StatusInfoMsg StatusMoreMsg
 
 "INFO MESSAGES
