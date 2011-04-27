@@ -28,7 +28,7 @@ hi -a StatusInfoMsg                color: #e0e0e0 !important;
 hi -l StatusInfoMsg StatusMoreMsg
 
 "INFO MESSAGES
-hi -a ModeMsg											 color: #e0e0e0; background: inherit;
+hi -a ModeMsg											 color: #e0e0e0; background: #2f2f2f !important;
 hi -a ModeMsg											 padding: 0.2em;
 hi -a ModeMsg											 border-top: 1px solid #202020;
 hi -a ModeMsg											 border-bottom: 1px solid #3c3b37;
@@ -47,7 +47,7 @@ hi -a CmdWarningMsg								 color: #e55e23;
 hi -a Events                       border-bottom: 1px solid #000 !important;
 hi -a Events                       background: #2f2f2f;
 "WRAPPERS ITEMS AND TITLE
-hi -a Normal											 color: #e0e0e0; background: inherit;
+hi -a Normal											 color: #e0e0e0; background: #2f2f2f;
 
 hi -a CompGroup                    color: inherit; background: transparent;
 hi -a CompGroup                    border-top:   2px solid #3c3b37;
