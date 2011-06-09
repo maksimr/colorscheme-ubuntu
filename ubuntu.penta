@@ -6,10 +6,10 @@
 hi -a StatusLineNormal						       border-top: 1px normal #343434;
 hi -a StatusLineNormal									 background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
 
-hi -l StatusLineNormal StatusLineSecure
-hi -l StatusLineNormal StatusLineExtended
+hi -l StatusLineNormal StatusLineSecure     background: #4a6390 !important;
+hi -l StatusLineNormal StatusLineExtended   background: #467f46 !important;
 hi -l StatusLineNormal StatusLine[selected]
-hi -l StatusLineNormal StatusLineBroken
+hi -l StatusLineNormal StatusLineBroken     background: #b13535 !important;
 
 hi -a StatusLine									 font-weight: normal; font-family: Ubuntu,Arial,Georgia;
 hi -a StatusLine									 color: #e0e0e0; font-size: 1em;
